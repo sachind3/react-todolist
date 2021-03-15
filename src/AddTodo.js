@@ -5,15 +5,17 @@ const AddTodo = () => {
   const [todo, setTodo] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newTodo = {
-      id: new Date().getTime().toString(),
-      completed: false,
-      text: todo,
-    };
-    setTodos((prev) => {
-      return [...prev, newTodo];
-    });
-    setTodo("");
+    if (todo.trim()) {
+      const newTodo = {
+        id: new Date().getTime().toString(),
+        completed: false,
+        text: todo,
+      };
+      setTodos((prev) => {
+        return [...prev, newTodo];
+      });
+      setTodo("");
+    }
   };
   return (
     <div>
