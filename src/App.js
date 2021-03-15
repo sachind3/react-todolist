@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { useState } from "react";
+import Nav from "./Nav";
+import AllTodos from "./AllTodos";
+import ActiveTodos from "./ActiveTodos";
+import CompletedTodos from "./CompletedTodos";
+import AddTodo from "./AddTodo";
+import TodoState from "./context/TodoState";
+const App = () => {
+  const [category, setCategory] = useState("All");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodoState>
+      <div className="wrapper">
+        <Nav setCategory={setCategory} />
+        {category === "All" && (
+          <>
+            <AddTodo />
+            <AllTodos />
+          </>
+        )}
+        {category === "Active" && (
+          <>
+            <AddTodo />
+            <ActiveTodos />
+          </>
+        )}
+        {category === "Completed" && <CompletedTodos />}
+      </div>
+    </TodoState>
   );
-}
+};
 
 export default App;
