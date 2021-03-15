@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://windbnb-by-sachin.netlify.app">
+    <a href="https://todo-by-sachin.netlify.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD">
+    <a href="https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5">
       Challenge
     </a>
   </h3>
@@ -31,13 +31,13 @@
 
 ## Overview
 
-![screenshot](https://windbnb-by-sachin.netlify.app/screenshot.png)
+![screenshot](https://todo-by-sachin.netlify.app/screenshot.png)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5) was to build an application to complete the given user stories.
 
 ## Acknowledgements
 
